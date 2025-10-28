@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Your Name | AI Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
+  <header class="navbar">
+    <div class="logo">🚀 YourName</div>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -17,62 +17,77 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <button id="theme-toggle">🌙</button>
   </header>
 
-  <section id="about">
-    <h2>👋 About Me</h2>
-    <p>
-      I'm a Computer Vision & Machine Learning Engineer with 8 years of experience
-      in the Automotive domain. Passionate about Vision-Language-Action (VLA) models
-      and robotics.
+  <section class="hero">
+    <h1 class="fade-in">Hi, I'm <span class="highlight">Your Name</span></h1>
+    <h2 class="fade-in-delay">AI & Computer Vision Engineer</h2>
+    <p class="fade-in-delay2">
+      I design intelligent systems that see, understand, and act — 
+      building the future of robotics and automation.
     </p>
-  </section>
-
-  <section id="skills">
-    <h2>🧠 Skills</h2>
-    <div class="skills-container">
-      <span>Python</span>
-      <span>ROS</span>
-      <span>PyTorch</span>
-      <span>TensorFlow</span>
-      <span>OpenCV</span>
-      <span>Transformers</span>
-      <span>VLA Models</span>
-      <span>AWS SageMaker</span>
+    <div class="buttons fade-in-delay3">
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="resume.pdf" class="btn-outline" target="_blank">Download Résumé</a>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>🚀 Projects</h2>
+  <section id="about" class="section">
+    <h2>👨‍💻 About Me</h2>
+    <p>
+      I'm an experienced <strong>Computer Vision and ML Engineer</strong> with 8+ years 
+      in automotive perception, now exploring <strong>Vision-Language-Action (VLA)</strong> 
+      models for robotics. I blend deep learning with real-world robotics to create 
+      perception systems that think and act intelligently.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>⚙️ Skills</h2>
+    <div class="skills-container">
+      <span>Python</span><span>PyTorch</span><span>Transformers</span><span>ROS</span>
+      <span>OpenCV</span><span>VLA Models</span><span>AWS SageMaker</span><span>TensorFlow</span>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>🚀 Featured Projects</h2>
     <div class="projects-container">
       <div class="project-card">
-        <h3>Autonomous Perception Pipeline</h3>
-        <p>Built a vision-based perception stack for autonomous driving using CNNs and LiDAR fusion.</p>
-        <a href="https://github.com/your-username/project1" target="_blank">View on GitHub</a>
+        <img src="https://source.unsplash.com/400x250/?ai,robotics" alt="Project 1">
+        <div class="project-content">
+          <h3>Autonomous Perception Stack</h3>
+          <p>Built real-time multi-sensor fusion for autonomous vehicles using CNNs and LiDAR.</p>
+          <a href="https://github.com/your-username/project1" target="_blank">🔗 View Project</a>
+        </div>
       </div>
-
       <div class="project-card">
-        <h3>VLA Robotics Prototype</h3>
-        <p>Experimented with Vision-Language-Action models for robotic manipulation tasks.</p>
-        <a href="https://github.com/your-username/project2" target="_blank">View on GitHub</a>
+        <img src="https://source.unsplash.com/400x250/?machinelearning,robot" alt="Project 2">
+        <div class="project-content">
+          <h3>Vision-Language-Action Robotics</h3>
+          <p>Trained an early VLA prototype for pick-and-place using natural language prompts.</p>
+          <a href="https://github.com/your-username/project2" target="_blank">🔗 View Project</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>📫 Contact</h2>
-    <p>Let's connect! Feel free to reach out:</p>
+  <section id="contact" class="section">
+    <h2>📫 Get In Touch</h2>
     <p>
-      <a href="mailto:youremail@example.com">youremail@example.com</a>
+      I'm open to collaborations and research opportunities in 
+      <strong>robotics, perception, and multimodal AI</strong>.
     </p>
-    <p>
-      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/your-username" target="_blank">GitHub</a>
-    </p>
+    <div class="contact-links">
+      <a href="mailto:youremail@example.com" class="btn">Email Me</a>
+      <a href="https://linkedin.com/in/your-linkedin" class="btn-outline" target="_blank">LinkedIn</a>
+      <a href="https://github.com/your-username" class="btn-outline" target="_blank">GitHub</a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Your Name | Built with ❤️ using GitHub Pages</p>
+    <p>© 2025 Your Name | Built with ❤️ and GitHub Pages</p>
   </footer>
 
   <script src="script.js"></script>
