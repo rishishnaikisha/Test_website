@@ -1,4 +1,8 @@
-document.getElementById("helloBtn").addEventListener("click", function() {
-  const msg = document.getElementById("message");
-  msg.textContent = "Hello there! 👋 You just clicked the button!";
+// Smooth scrolling for nav links
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
 });
